@@ -2,21 +2,22 @@
 from Tkinter import *
 from AltasBajas import AltasBajas
 
+
 class AltasGUI:
-    global nombre,apellidos,edad,email,direccion
+    global nombre, apellidos, edad, email, direccion
     global altasBajas
     altasBajas = AltasBajas()
     root = Tk()
-    root.title("Altas")  
-    frame = Frame(root)   
-    
+    root.title("Altas")
+    frame = Frame(root)
+
     def callback():
         nombres = nombre.get()
         apellidoss = apellidos.get()
         edads = edad.get()
         emails = email.get()
         direccions = direccion.get()
-        altasBajas.alta(nombres,apellidoss,edads,emails,direccions)
+        altasBajas.alta(nombres, apellidoss, edads, emails, direccions)
 
     nombreTitle = Label(frame, text="---Nombre---")
     apellidoTitle = Label(frame, text="---Apellido---")
@@ -24,31 +25,32 @@ class AltasGUI:
     emailTitle = Label(frame, text="---Email---")
     direccionTitle = Label(frame, text="---Direccion---")
     message = Label(frame)
-    
+
     nombre = Entry(frame)
-    apellidos = Entry(frame)  
+    apellidos = Entry(frame)
     edad = Entry(frame)
     email = Entry(frame)
     direccion = Entry(frame)
-    
-    frame.pack()      
-    nombreTitle.pack()  
+
+    frame.pack()
+    nombreTitle.pack()
     nombre.pack()
-    apellidoTitle.pack() 
-    apellidos.pack() 
+    apellidoTitle.pack()
+    apellidos.pack()
     edadTitle.pack()
     edad.pack()
     emailTitle.pack()
     email.pack()
     direccionTitle.pack()
-    direccion.pack() 
-    message.pack()  
+    direccion.pack()
+    message.pack()
 
-    button = Button(frame, command = callback, text="Alta")
+    button = Button(frame, command=callback, text="Alta")
     button.pack()
     root.mainloop()
-    
+
+
 class BajasGUI:
     root = Tk()
-    root.title("Bajas")  
+    root.title("Bajas")
     frame = Frame(root)

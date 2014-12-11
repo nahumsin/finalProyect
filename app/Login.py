@@ -1,8 +1,9 @@
 class Login:
 
     def verificar(self, usuario, contrasena):
-        usuarios = {"juanPerez":"cartmancuco","sodelVazquez":"pruebasymantenimiento"}       
+        usuarios = {"juanPerez": "cartmancuco",
+                    "sodelVazquez": "pruebasymantenimiento"}
         if usuario in usuarios:
-             return "True"
+            return "True"
         else:
-             return "False"
+            return "False"
