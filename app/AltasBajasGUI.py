@@ -49,8 +49,3 @@ class AltasGUI:
     button.pack()
     root.mainloop()
 
-
-class BajasGUI:
-    root = Tk()
-    root.title("Bajas")
-    frame = Frame(root)
