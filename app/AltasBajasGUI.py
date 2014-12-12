@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from Tkinter import *
+from Tkinter import Tk, Frame, Label, Entry, Button
 from AltasBajas import AltasBajas
 
 

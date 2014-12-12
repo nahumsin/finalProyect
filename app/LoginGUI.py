@@ -8,6 +8,9 @@ class LoginGUI:
     root = Tk()
     root.title("Login")
     frame = Frame(root)
+    message = Label(frame)
+    usuario = Entry(frame)
+    contrasena = Entry(frame, show='*')
 
     def callback():
         login = Login()
@@ -22,9 +25,6 @@ class LoginGUI:
 
     userTitle = Label(frame, text="---Nombre de Usuario---")
     passTitle = Label(frame, text="---Contraseña--")
-    message = Label(frame)
-    usuario = Entry(frame)
-    contrasena = Entry(frame, show='*')
 
     frame.pack()
     userTitle.pack()
