@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from Tkinter import Label, Entry, Frame, Tk
+from Tkinter import Label, Entry, Frame, Tk, Button
 from Login import Login
 
 
@@ -11,7 +11,7 @@ class LoginGUI:
 
     def callback():
         login = Login()
-        username = self.usuario.get()
+        username = usuario.get()
         password = contrasena.get()
         if login.verificar(username, password) == "True":
             message.configure(text="Bienvenido")
