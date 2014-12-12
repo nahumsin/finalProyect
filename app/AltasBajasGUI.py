@@ -48,4 +48,3 @@ class AltasGUI:
     button = Button(frame, command=callback, text="Alta")
     button.pack()
     root.mainloop()
-

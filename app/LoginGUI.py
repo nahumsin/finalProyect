@@ -11,7 +11,7 @@ class LoginGUI:
 
     def callback():
         login = Login()
-        username = usuario.get()
+        username = self.usuario.get()
         password = contrasena.get()
         if login.verificar(username, password) == "True":
             message.configure(text="Bienvenido")
