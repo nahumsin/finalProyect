@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from Tkinter import *
+from Tkinter import Label, Entry, Frame, Tk
 from Login import Login
 
 
